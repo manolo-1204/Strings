@@ -17,7 +17,9 @@ public class Main {
         letrica = entrada.nextLine().charAt(0);
 
         for (int i = 0; i < textico.length(); i++) {
-            contador++;
+            if (textico.toLowerCase().charAt(i) == letrica) contador++;
         }
+
+        System.out.println("la letrica " + letrica + " esta repetia " + contador + " vece");
     }
 }
